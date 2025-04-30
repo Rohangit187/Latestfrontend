@@ -1,0 +1,130 @@
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+
+function DetailListingCard() {
+  const location = useLocation();
+  const { listingData } = location.state || {}; // Fallback to empty object if no state
+
+  // If no data is passed, show a message or return a "not found" page
+  if (!listingData) {
+    return (
+      <div className="w-full text-center py-10">
+        <h2 className="text-xl font-bold text-gray-800">Business details not found</h2>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {/* Mobile view */}
+      <div className="md:hidden w-full px-2 py-4">
+        <div className="bg-slate-50 p-4 rounded-lg shadow-md space-y-3 max-w-xl mx-auto">
+          <div className="flex items-center gap-3">
+            <img
+              src={listingData.businessImage || '/BrandName.jpg'}
+              alt="Business Icon"
+              className="w-5 h-5 object-contain"
+            />
+            <p className="text-lg font-bold text-gray-800">{listingData.businessName}</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <img src="/Location.jpg" alt="Location Icon" className="w-5 h-5 object-contain" />
+            <p className="text-sm text-gray-700 font-medium">{listingData.buildingName} {listingData.landmark} {listingData.pincode} 
+            {listingData.city}  {listingData.state} {listingData.country}</p>
+          </div>
+          <div className="grid grid-cols-2 gap-3 text-gray-50">
+            <button className="btn btn-btn-neutral w-full text-sm">
+              Mobile: {listingData.mobileNumber}
+            </button>
+            <a
+              href={`https://wa.me/${listingData.whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-btn-neutral w-full text-sm"
+            >
+              WhatsApp
+            </a>
+            <a
+              href={listingData.facebookLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-btn-neutral w-full text-sm"
+            >
+              Facebook
+            </a>
+            <a
+              href={listingData.instagramLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-btn-neutral w-full text-sm"
+            >
+              Instagram
+            </a>
+          </div>
+          <div>
+            <h2 className="text-base font-semibold text-gray-800 mb-1">About Us</h2>
+            <p className="text-sm text-gray-700 leading-relaxed max-h-40 overflow-y-auto">
+              {listingData.Description|| 'No description available.'}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop View */}
+      <div className="w-full h-64 hidden md:flex bg-slate-50 p-4 space-x-4 mb-4 rounded-lg">
+        <div className="w-5/12 flex flex-col justify-start items-start space-y-3">
+          <div className="flex items-center gap-3">
+            <img
+              src={listingData.businessImage || '/BrandName.jpg'}
+              alt="Business Icon"
+              className="w-6 h-6 object-contain"
+            />
+            <p className="text-xl font-bold text-gray-800">{listingData.businessName}</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <img src="/Location.jpg" alt="Location Icon" className="w-6 h-6 object-contain" />
+            <p className="text-sm md:text-base text-gray-700 font-semibold">
+            {listingData.buildingName} {listingData.landmark}    {listingData.pincode} {listingData.city}  {listingData.state} {listingData.country}</p>
+          </div>
+          <div className="grid grid-cols-2 gap-3 w-full">
+            <button className="btn btn-Primary w-full">
+              Mobile No: {listingData.mobileNumber}
+            </button>
+            <a
+              href={`https://wa.me/${listingData.whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-Primary w-full"
+            >
+              WhatsApp
+            </a>
+            <a
+              href={listingData.facebookLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-Primary w-full"
+            >
+              Facebook
+            </a>
+            <a
+              href={listingData.instagramLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-Primary w-full"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+        <div className="flex-1 flex flex-col justify-start items-start overflow-hidden font-bold gap-y-2">
+          <h1>About Us</h1>
+          <p className="text-sm text-gray-700 leading-relaxed overflow-y-auto max-h-45 text-left pr-2">
+            {listingData.Description || 'No description available.'}
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default DetailListingCard;
