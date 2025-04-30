@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import apiServices from "../Services/Api";
 
 const PropertyCreateListing = () => {
   const [submitted, setSubmit] = useState(false);
@@ -58,7 +59,7 @@ const PropertyCreateListing = () => {
       form.append(key, formData[key]);
     }
  try {
-      const res = await axios.post("https://api-nav.navsankalp.com/api/property/create", form, {
+      const res = await axios.post(apiServices.propertyCreate, form, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

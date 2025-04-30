@@ -3,8 +3,8 @@ import SearchBar from './SearchBar';
 import Navbar from './Navbar';
 import ListingCardSample from './ListingCardSample';
 import { useLocation, useNavigate } from 'react-router-dom';
+import apiServices from '../Services/Api';
 import axios from 'axios';
-
 
 function ListingPageAllBusiness() {
   const locationState = useLocation().state;
@@ -23,7 +23,7 @@ function ListingPageAllBusiness() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://api-nav.navsankalp.com/api/business/search', {
+        const response = await axios.get(apiServices.businessfetch, {
           params: {
             category: business,
             city: location,

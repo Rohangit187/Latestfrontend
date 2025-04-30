@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import apiServices from "../Services/Api";
 
 const RojgarCreateListing = () => {
   const [submitted, setSubmit] = useState(false);
@@ -55,7 +56,7 @@ const RojgarCreateListing = () => {
     }
 
     try {
-      const res = await axios.post("https://api-nav.navsankalp.com/api/employee/create", form, {
+      const res = await axios.post(apiServices.rojgarCreate, form, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

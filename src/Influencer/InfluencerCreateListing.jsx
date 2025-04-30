@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import apiServices from "../Services/Api";
 
 const InfluencerCreateListing = () => {
   const [submitted, setSubmit] = useState(false);
@@ -55,7 +56,7 @@ const InfluencerCreateListing = () => {
     }
 
     try {
-      const res = await axios.post("https://api-nav.navsankalp.com/api/creators/create", form, {
+      const res = await axios.post(apiServices.influencerCreate, form, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

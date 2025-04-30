@@ -4,7 +4,7 @@ import PropertyListingCard from './PropertyListingCard';
 import { useLocation, useNavigate } from 'react-router-dom';
 import PropertyNavbar from './PropertyNavbar';
 import axios from 'axios';
-
+import apiServices from '../Services/Api';
 
 function PropertyAllBusinessListing() {
   const locationState = useLocation().state;
@@ -12,27 +12,24 @@ function PropertyAllBusinessListing() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  if (!locationState) {
+    if (!locationState) {
     // If someone visits this page directly without search
     navigate('/');
     return null;
   }
 
   const { category, area } = locationState;
-
-  useEffect(() => {
+ useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://api-nav.navsankalp.com/api/Propertyy/search', {
+        const response = await axios.get(apiServices.propertyFetch,{
           params: {
             category: category,
             area: area,
           },
         });
         console.log(response.data);
-      
-
-        //console.log(filteredData);
+       //console.log(filteredData);
         setData(response.data); // assuming response is an array
        // console.log(filteredData);
         console.log(data);

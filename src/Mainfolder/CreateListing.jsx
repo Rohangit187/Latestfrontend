@@ -59,7 +59,7 @@ const CreateListing = () => {
     }
 
     try {
-      const res = await axios.post( apiServices.businessCreate, form, {
+      const res = await axios.post(apiServices.businessCreate, form, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

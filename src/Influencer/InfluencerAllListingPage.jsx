@@ -3,9 +3,8 @@ import InfluencerSearchbar from './InfluencerSearchbar';
 import InfluencerNavbar from './InfluencerNavbar';
 import InfluencerListingCard from './InfluencerListingCard';
 import { useLocation, useNavigate } from 'react-router-dom';
+import apiServices from '../Services/Api'
 import axios from 'axios';
-
-
 function ListingPageAllBusiness() {
   const locationState = useLocation().state;
   const navigate = useNavigate();
@@ -23,7 +22,7 @@ function ListingPageAllBusiness() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://api-nav.navsankalp.com/api/influencers/search', {
+        const response = await axios.get(apiServices.influencerFetch, {
           params: {
              contentCategory:contentCategory,
              city:city,

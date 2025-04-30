@@ -3,6 +3,7 @@ import RojgarSearchbar from './RojgarSearchbar';
 import RojgarNavbar from './RojgarNavbar';
 import RojgarListingcard from './RojgarListingcard';
 import { useLocation, useNavigate } from 'react-router-dom';
+import apiServices from '../Services/Api';
 import axios from 'axios';
 
 
@@ -23,7 +24,7 @@ function RojgarEmployeeAll() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://api-nav.navsankalp.com/api/employees/search', {
+        const response = await axios.get(apiServices.rojgarSearch, {
           params: {
             employeeCategory: employeeCategory,
             area: area,
