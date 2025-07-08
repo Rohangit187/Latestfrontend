@@ -34,7 +34,7 @@ function ReviewVideo() {
               </figure>
 
               <div className="p-4">
-                <h2 className="text-lg font-semibold mb-2">Prestigous Client</h2>
+                <h2 className=" text-lg font-semibold mb-2 text-black">Prestigous Client</h2>
                 <p className="text-sm text-gray-600 mb-3">{client.description}</p>
 
                 <div className="flex flex-wrap justify-between items-center gap-2">

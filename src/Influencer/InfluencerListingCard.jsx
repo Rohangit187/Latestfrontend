@@ -42,7 +42,7 @@ const InfluencerListingCard = ({data}) => {
               href={data.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
             
               Facebook
@@ -51,7 +51,7 @@ const InfluencerListingCard = ({data}) => {
               href={data.instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               Instagram
             </a>
@@ -102,7 +102,7 @@ const InfluencerListingCard = ({data}) => {
               href={data.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full  bg-gray-100 text-black"
             >
               Facebook
             </a>
@@ -110,7 +110,7 @@ const InfluencerListingCard = ({data}) => {
               href={data.instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Instagram
             </a>

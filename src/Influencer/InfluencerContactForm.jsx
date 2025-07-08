@@ -7,12 +7,12 @@ function InfluencerContactForm() {
       <div className="w-full h-80 flex md:hidden flex-col justify-self-auto px-2 py-2">
         {/* Left Side */}
         <div>
-          <h1 className="py-3 font-bold text-3xl"> Enquiry Form</h1>
+          <h1 className="py-3 font-bold text-3xl text-black" > Enquiry Form</h1>
         </div>
         <div className="py-2 flex-col space-y-2">
-        <input type="text" placeholder="Enter Name" className="input py-2" />
-        <input type="text" placeholder="Enter Mobile Number" className="input py-5" />
-        <input type="text" placeholder="Tell Us About Service" className="input py-5"/>
+        <input type="text" placeholder="Enter Name" className="input py-2 bg-white text-black" />
+        <input type="text" placeholder="Enter Mobile Number" className="input py-5  bg-white text-black" />
+        <input type="text" placeholder="Tell Us About Service" className="input py-5  bg-white text-black"/>
         <button className="btn btn-secondary w-32 py-3 dropdown-hover">Submit</button>
         </div>
          </div>
@@ -36,10 +36,10 @@ function InfluencerContactForm() {
         {/* Right Side */}
         <div className="w-1/2 bg-gray-50 flex flex-col items-center justify-center h-80">
         <div>
-          <h1 className=" font-bold text-3xl py-3"> Enquiry Form</h1>
+          <h1 className="font-bold text-3xl py-3 text-black"> Enquiry Form</h1>
         </div>
         <div className="py-2  flex flex-col space-y-1 w-full max-w-xs">
-        <input type="text" placeholder="Enter Name" className="input py-2" />
+        <input type="text" placeholder="Enter Name" className="input py-2 bg-white" />
         <input type="text" placeholder="Enter Mobile Number" className="input py-5" />
         <input type="text" placeholder="Brief About Services" className="input py-5"/>
         <button className="btn btn-secondary w-32 py-3 dropdown-hover space-y-3 ">Send Enquiry</button>

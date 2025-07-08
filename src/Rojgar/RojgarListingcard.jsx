@@ -26,14 +26,14 @@ const RojgarListingcard = ({data}) => {
             <p className="text-sm text-gray-700 font-medium">{data.area}</p>
           </div>
           <div className="grid grid-cols-2 gap-3 text-gray-50">
-            <button className="btn btn-btn-neutral w-full text-xs">
+            <button className="btn btn-btn-neutral w-full text-xs bg-gray-100 text-black">
               Mobile:{data.phoneNumber}
             </button>
             <a
               href={`https://wa.me/${data.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               WhatsApp
             </a>
@@ -104,14 +104,14 @@ const RojgarListingcard = ({data}) => {
             <p className="text-sm md:text-base text-gray-700 font-bold"> {data.area} {data.pincode} {data.city}  {data.state} {data.country} </p>
           </div>
           <div className="grid grid-cols-2 gap-3 w-full">
-            <button className="btn btn-Primary w-full">
+            <button className="btn btn-Primary w-full bg-gray-100 text-black">
               Mobile No: {data.phoneNumber}
             </button>
             <a
               href={`https://wa.me/${data.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               WhatsApp
             </a>

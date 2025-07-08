@@ -34,7 +34,7 @@ function InfluencerDetailingCard() {
           </div>
           <div className="grid grid-cols-2 gap-3 text-gray-50">
              {/*
-            <button className="btn btn-btn-neutral w-full text-sm">
+            <button className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black">
              
               Mobile: {listingData.mobileNumber}
             </button>
@@ -42,7 +42,7 @@ function InfluencerDetailingCard() {
               href={`https://wa.me/${listingData.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               WhatsApp
             </a>
@@ -51,7 +51,7 @@ function InfluencerDetailingCard() {
               href={listingData.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               Facebook
             </a>
@@ -59,7 +59,7 @@ function InfluencerDetailingCard() {
               href={listingData.instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               Instagram
             </a>
@@ -111,7 +111,7 @@ function InfluencerDetailingCard() {
               href={listingData.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Facebook
             </a>
@@ -119,7 +119,7 @@ function InfluencerDetailingCard() {
               href={listingData.instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Instagram
             </a>

@@ -6,7 +6,7 @@ const ListingCardSample = ({data}) => {
   return (
     <>
       {/* Mobile view */}
-      <div className="md:hidden w-full px-2 py-4">
+      <div className="md:hidden w-full px-2 py-4 bg-white">
         <div className="bg-slate-50 p-4 rounded-lg shadow-md space-y-3 max-w-xl mx-auto">
           <div className="w-full">
             <img
@@ -23,17 +23,17 @@ const ListingCardSample = ({data}) => {
           </div>
           <div className="flex items-center gap-3">
             <img src="/Location.jpg" alt="Location Icon" className="w-5 h-5 object-contain" />
-            <p className="text-sm text-gray-700 font-medium"> {data.city}</p>
+            <p className="text-sm text-gray-700 font-medium">{data.city}</p>
           </div>
           <div className="grid grid-cols-2 gap-3 text-gray-50">
-            <button className="btn btn-btn-neutral w-full text-xs">
+            <button className="btn btn-btn-neutral w-full text-xs bg-gray-100 text-black">
               Mobile:{data.mobileNumber}
             </button>
             <a
               href={`https://wa.me/${data.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm bg-gray-100 text-black"
             >
               WhatsApp
             </a>
@@ -41,7 +41,7 @@ const ListingCardSample = ({data}) => {
               href={data.FacebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm bg-white text-black"
             >
               Facebook
             </a>
@@ -49,7 +49,7 @@ const ListingCardSample = ({data}) => {
               href={data.InstagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm bg-white text-black"
             >
               Instagram
             </a>
@@ -58,7 +58,7 @@ const ListingCardSample = ({data}) => {
       </div>
 
       {/* Desktop View */}
-      <div className="w-full h-64 hidden md:flex bg-slate-50 p-4 space-x-4 mb-4 rounded-lg">
+      <div className="w-full h-64 hidden md:flex p-4 space-x-4 mb-4 rounded-lg bg-white">
         <div className="w-1/4 flex justify-start items-start">
           <img
             src={data.
@@ -79,14 +79,14 @@ const ListingCardSample = ({data}) => {
               {data.buildingName} {data.landmark} {data.pincode} {data.city}  {data.state} {data.country} </p>
              </div>
           <div className="grid grid-cols-2 gap-3 w-full">
-            <button className="btn btn-Primary w-full">
+            <button className="btn btn-Primary w-full bg-gray-100 text-black">
               Mobile No: {data.mobileNumber}
             </button>
             <a
               href={`https://wa.me/${data.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               WhatsApp
             </a>
@@ -94,7 +94,7 @@ const ListingCardSample = ({data}) => {
               href={data.FacebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Facebook
             </a>
@@ -102,7 +102,7 @@ const ListingCardSample = ({data}) => {
               href={data.InstagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Instagram
             </a>

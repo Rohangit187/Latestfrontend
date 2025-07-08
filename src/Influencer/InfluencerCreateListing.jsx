@@ -87,7 +87,7 @@ const InfluencerCreateListing = () => {
       </div>
 
       {/* Responsive Form */}
-      <div className="w-full flex justify-center px-4 md:px-0 my-6">
+      <div className="w-full flex justify-center px-4 md:px-0 my-6 bg-white">
         <div className="w-full max-w-5xl p-6 bg-white shadow-lg rounded-lg">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-blue-800">
             📌 Influencer Free Registeration
@@ -95,19 +95,19 @@ const InfluencerCreateListing = () => {
 
           <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             {/* Input Fields */}
-            <input type="text" name="name" placeholder="Influencer-Name" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="email" name="email" placeholder="Email" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="facebookLink" placeholder="Facebook-Link" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="instagramLink" placeholder="Instagtam-Link" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="fbFollower" placeholder="Facebook Follower (Ex-121k)" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="instagramFollower" placeholder="Instagram Follower (Ex-121k)" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="city" placeholder="City" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="pincode" placeholder="Pincode" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="state" placeholder="State" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="country" placeholder="Country" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="mobileNumber" placeholder="Mobile-Number" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="whatsappNumber" placeholder="WhatsApp Number" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="contentCategory" placeholder="Content-Category" onChange={handleChange} required className="border p-3 rounded w-full" />
+            <input type="text" name="name" placeholder="Influencer-Name" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="email" name="email" placeholder="Email" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="facebookLink" placeholder="Facebook-Link" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="instagramLink" placeholder="Instagtam-Link" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="fbFollower" placeholder="Facebook Follower (Ex-121k)" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="instagramFollower" placeholder="Instagram Follower (Ex-121k)" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="city" placeholder="City" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="pincode" placeholder="Pincode" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="state" placeholder="State" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="country" placeholder="Country" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="mobileNumber" placeholder="Mobile-Number" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="whatsappNumber" placeholder="WhatsApp Number" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="contentCategory" placeholder="Content-Category" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
             
             {/* Description */}
             <textarea
@@ -115,18 +115,18 @@ const InfluencerCreateListing = () => {
               placeholder="About Your Journey (Max 50 words)"
               value={formData.description}
               onChange={handleDescriptionChange}
-              className="border p-3 rounded w-full md:col-span-2"
+              className="border p-3 rounded w-full bg-white md:col-span-2"
               rows={3}
             />
 
             {/* File Uploads */}
-            <label className="block text-sm font-medium md:col-span-2">Profile Photo*</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Profile Photo*</label>
             <input type="file" name="profilePhoto" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Image1 *</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Image1 *</label>
             <input type="file" name="image1" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Image2 *</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Image2 *</label>
             <input type="file" name="image2" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">image3</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">image3</label>
             <input type="file" name="image3" onChange={handleFileChange} className="border p-2 rounded w-full md:col-span-2" />
            {/* Submit Button */}
             <button

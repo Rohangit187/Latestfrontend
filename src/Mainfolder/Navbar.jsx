@@ -21,7 +21,7 @@ function Navbar() {
     <div className="navbar bg-base-100 bg-gray-100">
   <div className="navbar-start">
     <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-gray-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -37,11 +37,11 @@ function Navbar() {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><Link to="/Influencer/Homepage">Influencer</Link></li>
-        <li><Link to="/rojgar/home">Rojgar</Link></li>
-        <li><Link to="/Property/Homepage">Property</Link></li>
-        <li><Link to="/" className="hover:text-primary transition-all duration-200">Busniess</Link></li>
+        className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+        <li className='text-black'><Link to="/Influencer/Homepage">Influencer</Link></li>
+        <li className='text-black' ><Link to="/rojgar/home">Rojgar</Link></li>
+        <li className='text-black'><Link to="/Property/Homepage">Property</Link></li>
+        <li className='text-black'><Link to="/" className="hover:text-primary transition-all duration-200">Busniess</Link></li>
         </ul>
     </div>
     <Link to="/" className="btn btn-ghost hidden md:block py-1 text-2xl text-cyan-700 ">NavSankalp</Link>
@@ -64,7 +64,7 @@ function Navbar() {
     
   </div>
   <div className="navbar-center hidden lg:block">
-    <ul className="menu menu-horizontal px-6 space-x-4 text-[16px] font-medium">
+    <ul className="menu menu-horizontal px-6 space-x-4 text-[16px] font-medium text-black">
     <li><Link to="/Influencer/Homepage">Influencer</Link></li>
 
     <li> <Link to="/rojgar/home" className="hover:text-primary transition-all duration-200"> Rojgar </Link> </li>

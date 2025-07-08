@@ -87,7 +87,7 @@ const RojgarCreateListing = () => {
       </div>
 
       {/* Responsive Form */}
-      <div className="w-full flex justify-center px-4 md:px-0 my-6">
+      <div className="w-full flex justify-center px-4 md:px-0 my-6 bg-white">
         <div className="w-full max-w-5xl p-6 bg-white shadow-lg rounded-lg">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-blue-800">
             📌 Start Your Career Journey – Sign Up Free!
@@ -95,22 +95,22 @@ const RojgarCreateListing = () => {
 
           <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             {/* Input Fields */}
-            <input type="text" name="name" placeholder="Full Name" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="email" name="email" placeholder="Email" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="phoneNumber" placeholder="phoneNumber" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="whatsappNumber" placeholder="Whatsapp Number" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="skill1" placeholder="Skill 1" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="skill2" placeholder="Skill 2" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="skill3" placeholder="Skill 3" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="area" placeholder="Current Address(Area)" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="city" placeholder="City" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="pincode" placeholder="Pincode" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="state" placeholder="State" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="country" placeholder="Country" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="employeeCategory" placeholder="Write Catrgory (Ex-Engineer , Security Card, Housekeeping" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="experience" placeholder="How many Year Of Experience " onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="qualification" placeholder="Last Degree / Last Qualification Ex- B-Tech , B-Come , 12 Class " onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="Currentcompanyname" placeholder="Last Company Name / Last Store/Shop Name" onChange={handleChange} className="border p-3 rounded w-full" />
+            <input type="text" name="name" placeholder="Full Name" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="email" name="email" placeholder="Email" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="phoneNumber" placeholder="phoneNumber" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="whatsappNumber" placeholder="Whatsapp Number" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="skill1" placeholder="Skill 1" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="skill2" placeholder="Skill 2" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="skill3" placeholder="Skill 3" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="area" placeholder="Current Address(Area)" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="city" placeholder="City" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="pincode" placeholder="Pincode" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="state" placeholder="State" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="country" placeholder="Country" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="employeeCategory" placeholder="Write Catrgory (Ex-Engineer , Security Card, Housekeeping" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="experience" placeholder="How many Year Of Experience " onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="qualification" placeholder="Last Degree / Last Qualification Ex- B-Tech , B-Come , 12 Class " onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="Currentcompanyname" placeholder="Last Company Name / Last Store/Shop Name" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
 
             {/* Description */}
             <textarea
@@ -118,12 +118,12 @@ const RojgarCreateListing = () => {
               placeholder="Business Description (Max 50 words)"
               value={formData.description}
               onChange={handleDescriptionChange}
-              className="border p-3 rounded w-full md:col-span-2"
+              className="border p-3 rounded w-full bg-white md:col-span-2"
               rows={3}
             />
 
             {/* File Uploads */}
-            <label className="block text-sm font-medium md:col-span-2"> Proffessional Profile Picture *</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black"> Proffessional Profile Picture *</label>
             <input type="file" name="profileImage" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
             {/* Submit Button */}
             <button

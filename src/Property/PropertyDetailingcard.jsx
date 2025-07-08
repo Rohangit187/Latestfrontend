@@ -33,14 +33,14 @@ function  PropertyDetailingcard() {
             {listingData.city}  {listingData.state} {listingData.country}</p>
           </div>
           <div className="grid grid-cols-2 gap-3 text-gray-50">
-            <button className="btn btn-btn-neutral w-full text-sm">
+            <button className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black">
               Mobile: {listingData.mobileNumber}
             </button>
             <a
               href={`https://wa.me/${listingData.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               WhatsApp
             </a>
@@ -48,7 +48,7 @@ function  PropertyDetailingcard() {
               href={listingData.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               Facebook
             </a>
@@ -56,7 +56,7 @@ function  PropertyDetailingcard() {
               href={listingData.instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               Instagram
             </a>
@@ -87,14 +87,14 @@ function  PropertyDetailingcard() {
             {listingData.area} {listingData.pincode} {listingData.city}  {listingData.state} {listingData.country}</p>
           </div>
           <div className="grid grid-cols-2 gap-3 w-full">
-            <button className="btn btn-Primary w-full">
+            <button className="btn btn-Primary w-full bg-gray-100 text-black">
               Mobile No: {listingData.mobileNumber}
             </button>
             <a
               href={`https://wa.me/${listingData.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               WhatsApp
             </a>
@@ -102,7 +102,7 @@ function  PropertyDetailingcard() {
               href={listingData.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Facebook
             </a>
@@ -110,7 +110,7 @@ function  PropertyDetailingcard() {
               href={listingData.instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Instagram
             </a>

@@ -61,6 +61,7 @@ function ListingPageAllBusiness() {
     <>
       <Navbar />
       <SearchBar />
+
       {data.length === 0 ? (
         <p style={{ textAlign: 'center' }}>No businesses found for "{business}" in "{location}"</p>
       ) : (

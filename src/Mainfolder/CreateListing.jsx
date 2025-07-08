@@ -90,7 +90,7 @@ const CreateListing = () => {
       </div>
 
       {/* Responsive Form */}
-      <div className="w-full flex justify-center px-4 md:px-0 my-6">
+      <div className="w-full flex justify-center px-4 md:px-0 my-6 bg-white">
         <div className="w-full max-w-5xl p-6 bg-white shadow-lg rounded-lg">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-blue-800">
             📌 Business Free Registration
@@ -98,20 +98,20 @@ const CreateListing = () => {
 
           <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             {/* Input Fields */}
-            <input type="text" name="businessName" placeholder="Business Name" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="email" name="businessEmail" placeholder="Business Email" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="buildingName" placeholder="Building / Plot Name" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="area" placeholder="Area / Locality" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="landmark" placeholder="Landmark" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="city" placeholder="City" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="pincode" placeholder="Pincode" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="state" placeholder="State" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="country" placeholder="Country" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="mobileNumber" placeholder="Mobile Number" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="whatsappNumber" placeholder="WhatsApp Number (Optional)" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="businessCategory" placeholder="Business Category" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="FacebookLink" placeholder="Facebook Page (Optional)" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="InstagramLink" placeholder="Instagram Link (Optional)" onChange={handleChange} className="border p-3 rounded w-full" />
+            <input type="text" name="businessName" placeholder="Business Name" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="email" name="businessEmail" placeholder="Business Email" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="buildingName" placeholder="Building / Plot Name" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="area" placeholder="Area / Locality" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="landmark" placeholder="Landmark" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="city" placeholder="City" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="pincode" placeholder="Pincode" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="state" placeholder="State" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="country" placeholder="Country" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="mobileNumber" placeholder="Mobile Number" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="whatsappNumber" placeholder="WhatsApp Number (Optional)" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="businessCategory" placeholder="Business Category" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="FacebookLink" placeholder="Facebook Page (Optional)" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="InstagramLink" placeholder="Instagram Link (Optional)" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
 
             {/* Description */}
             <textarea
@@ -119,22 +119,22 @@ const CreateListing = () => {
               placeholder="Business Description (Max 50 words)"
               value={formData.Description}
               onChange={handleDescriptionChange}
-              className="border p-3 rounded w-full md:col-span-2"
+              className="border p-3 rounded w-full bg-white md:col-span-2"
               rows={3}
             />
 
             {/* File Uploads */}
-            <label className="block text-sm font-medium md:col-span-2">Front View Image *</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Front View Image *</label>
             <input type="file" name="frontImage" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Reception Area Image *</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Reception Area Image *</label>
             <input type="file" name="receptionImage" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Inside Premises Image *</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Inside Premises Image *</label>
             <input type="file" name="insideImage" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Menu / Service List Page 1</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Menu / Service List Page 1</label>
             <input type="file" name="menuPage1" onChange={handleFileChange} className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Menu Page 2</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Menu Page 2</label>
             <input type="file" name="menuPage2" onChange={handleFileChange} className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Menu Page 3</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Menu Page 3</label>
             <input type="file" name="menuPage3" onChange={handleFileChange} className="border p-2 rounded w-full md:col-span-2" />
 
             {/* Submit Button */}

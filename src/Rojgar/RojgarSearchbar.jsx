@@ -21,21 +21,21 @@ function RojgarSearchbar() {
    return (
     <>
       {/* Mobile View */}
-      <div className="w-full md:hidden px-4">
+      <div className="w-full md:hidden px-md-4  text-black">
         <div className="bg-white shadow-md rounded-lg p-3 flex flex-col space-y-2">
           <input
             type="text"
             placeholder="Search Employee Category (Ex- Engineer, SalesMan, Receptionist) ..."
             value={employeeCategory}
             onChange={(e) => setemployeeCategory(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
           />
           <input
             type="text"
             placeholder="Enter Area...(Ex- pratap nagar, Malviya nagar)"
             value={area}
             onChange={(e) => setarea(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
           />
           <button
             onClick={handleSearch}
@@ -47,21 +47,21 @@ function RojgarSearchbar() {
       </div>
 
       {/* Desktop View */}
-      <div className="hidden md:flex justify-center py-4">
+      <div className="hidden md:flex justify-center py-4  text-black">
         <div className="bg-gray-100 shadow-lg rounded-lg p-3 flex space-x-3 w-3/5">
           <input
             type="text"
             placeholder="Search Employee Category (Ex- Engineer)"
             value={employeeCategory}
             onChange={(e) => setemployeeCategory(e.target.value)}
-            className="flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
           />
           <input
             type="text"
             placeholder="Enter Area"
             value={area}
             onChange={(e) => setarea(e.target.value)}
-            className="w-1/4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-1/4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
           />
           <button
             onClick={handleSearch}

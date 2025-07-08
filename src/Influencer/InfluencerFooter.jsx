@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function InfluencerFooter() {
   return (
     <>
-    <div className='bg-grey-50'>
+    <div className='bg-grey-50 text-black'>
      <div className="flex justify-around gap-8  md:hidden text-xs cursor-pointer ">
   <nav className='cursor-pointer'>
     <h1 className="text-lg font-black">Company</h1>
@@ -94,7 +94,7 @@ Facebook</a>
 </footer>
 
      </div>
-     <footer className="footer sm:footer-horizontal footer-center bg-grey-50 text-base-content p-4 font-bold text-lg">
+     <footer className="footer sm:footer-horizontal footer-center bg-grey-50 text-base-content p-4 font-bold text-lg text-black">
   <aside>
     <p>Copyright © {new Date().getFullYear()} - All right reserved by RVK GROUP Ltd</p>
   </aside>

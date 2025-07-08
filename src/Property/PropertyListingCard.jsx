@@ -25,14 +25,14 @@ const PropertyListingCard = ({data}) => {
             <p className="text-sm text-gray-700 font-medium">{data.area}</p>
           </div>
           <div className="grid grid-cols-2 gap-3 text-gray-50">
-            <button className="btn btn-btn-neutral w-full text-xs">
+            <button className="btn btn-btn-neutral w-full text-xs bg-gray-100 text-black">
               Mobile:{data.mobileNumber}
             </button>
             <a
               href={`https://wa.me/${data.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               WhatsApp
             </a>
@@ -40,7 +40,7 @@ const PropertyListingCard = ({data}) => {
               href={data.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               Facebook
             </a>
@@ -48,7 +48,7 @@ const PropertyListingCard = ({data}) => {
               href={data.instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-btn-neutral w-full text-sm"
+              className="btn btn-btn-neutral w-full text-sm  bg-gray-100 text-black"
             >
               Instagram
             </a>
@@ -79,14 +79,14 @@ const PropertyListingCard = ({data}) => {
             <p className="text-sm md:text-base text-gray-700 font-semibold">{data.area}  {data.landmark} {data.pincode}   {data.city}  {data.state} {data.country} </p>
           </div>
           <div className="grid grid-cols-2 gap-3 w-full">
-            <button className="btn btn-Primary w-full">
+            <button className="btn btn-Primary w-full bg-gray-100 text-black">
               Mobile No: {data.mobileNumber}
             </button>
             <a
               href={`https://wa.me/${data.whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               WhatsApp
             </a>
@@ -94,7 +94,7 @@ const PropertyListingCard = ({data}) => {
               href={data.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Facebook
             </a>
@@ -102,7 +102,7 @@ const PropertyListingCard = ({data}) => {
               href={data.instagramLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-Primary w-full"
+              className="btn btn-Primary w-full bg-gray-100 text-black"
             >
               Instagram
             </a>

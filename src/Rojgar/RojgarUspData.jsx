@@ -3,13 +3,13 @@ import React from "react";
 const RojgarUspData = () => {
   return (
     <>
-      <div className="px-6 py-8 text-left">
+      <div className="px-5  py-5  text-left">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cyan-600 font-bold mb-4">
           Your ultimate destination for discovering Your Dream Job, near you—anywhere in India
         </h1>
         </div>
        <div className="px-6 text-left bg-gray-50 rounded-lg">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cyan-600 font-bold mb-6">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cyan-600 font-bold mb-md-6">
           How Our Services Are Beneficial for You
         </h2>
 

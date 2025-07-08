@@ -90,7 +90,7 @@ const PropertyCreateListing = () => {
       </div>
 
       {/* Responsive Form */}
-      <div className="w-full flex justify-center px-4 md:px-0 my-6">
+      <div className="w-full flex justify-center px-4 md:px-0 my-6 bg-white">
         <div className="w-full max-w-5xl p-6 bg-white shadow-lg rounded-lg">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-blue-800">
             📌 Start Posting Property , Its Free
@@ -98,20 +98,20 @@ const PropertyCreateListing = () => {
 
           <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             {/* Input Fields */}
-            <input type="text" name="name" placeholder="Owner Name" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="category" placeholder="Enter Category - Flats/Plots/Comercial/PG" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="email" placeholder="Owner-Email" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="facebookLink" placeholder="Facebook-Link" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="instagramLink" placeholder="Instagtam-Link" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="area" placeholder="area" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="city" placeholder="City" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="pincode" placeholder="Pincode" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="state" placeholder="State" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="country" placeholder="Country" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="mobileNumber" placeholder="Mobile-Number" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="whatsappNumber" placeholder="WhatsApp Number" onChange={handleChange} className="border p-3 rounded w-full" />
-            <input type="text" name="price" placeholder="Price (Ex 34-48 Lac)" onChange={handleChange} required className="border p-3 rounded w-full" />
-            <input type="text" name="size" placeholder="Flat-Size(Ex 964-1783 Sqft)" onChange={handleChange} required className="border p-3 rounded w-full" />
+            <input type="text" name="name" placeholder="Owner Name" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="category" placeholder="Enter Category - Flats/Plots/Comercial/PG" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="email" placeholder="Owner-Email" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="facebookLink" placeholder="Facebook-Link" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="instagramLink" placeholder="Instagtam-Link" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="area" placeholder="area" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="city" placeholder="City" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="pincode" placeholder="Pincode" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="state" placeholder="State" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="country" placeholder="Country" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="mobileNumber" placeholder="Mobile-Number" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="whatsappNumber" placeholder="WhatsApp Number" onChange={handleChange} className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="price" placeholder="Price (Ex 34-48 Lac)" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
+            <input type="text" name="size" placeholder="Flat-Size(Ex 964-1783 Sqft)" onChange={handleChange} required className="border p-3 rounded w-full bg-white" />
 
             {/* Description */}
             <textarea
@@ -119,24 +119,24 @@ const PropertyCreateListing = () => {
               placeholder="More About Projects Including Amenties (Max -100 Words)"
               value={formData.description}
               onChange={handleDescriptionChange}
-              className="border p-3 rounded w-full md:col-span-2"
+              className="border p-3 rounded w-full bg-white md:col-span-2"
               rows={3}
             />
 
             {/* File Uploads */}
-            <label className="block text-sm font-medium md:col-span-2">Project(Front Photo)*</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Project(Front Photo)*</label>
             <input type="file" name="profilePhoto" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2"> Flat(Hall-Image) / Plot(Image1) / Commercial(Image1) / Pg(Image1)</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black"> Flat(Hall-Image) / Plot(Image1) / Commercial(Image1) / Pg(Image1)</label>
             <input type="file" name="image1" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2"> Flat(Room-Image) / Plot(Image2) / Commercial(Image2) / Pg(Image2)</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black"> Flat(Room-Image) / Plot(Image2) / Commercial(Image2) / Pg(Image2)</label>
             <input type="file" name="image2" onChange={handleFileChange} required className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Flat(Kitchen-Image) / Plot(Image3) / Commercial(Image3) / Pg(Image3)</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Flat(Kitchen-Image) / Plot(Image3) / Commercial(Image3) / Pg(Image3)</label>
             <input type="file" name="image3" onChange={handleFileChange} className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2"> Amenties Images1)</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black"> Amenties Images1)</label>
             <input type="file" name="image4" onChange={handleFileChange} className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Amenties Images2  / Commercial(Image3) / Pg(Image3)</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Amenties Images2  / Commercial(Image3) / Pg(Image3)</label>
             <input type="file" name="image5" onChange={handleFileChange} className="border p-2 rounded w-full md:col-span-2" />
-            <label className="block text-sm font-medium md:col-span-2">Amenties Images3</label>
+            <label className="block text-sm font-medium md:col-span-2 text-black">Amenties Images3</label>
             <input type="file" name="image6" onChange={handleFileChange} className="border p-2 rounded w-full md:col-span-2" />
            {/* Submit Button */}
             <button

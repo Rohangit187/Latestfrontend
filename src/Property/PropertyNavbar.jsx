@@ -21,7 +21,7 @@ function PropertyNavbar() {
     <div className="navbar bg-base-100 bg-gray-100">
   <div className="navbar-start">
     <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-gray-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -37,11 +37,11 @@ function PropertyNavbar() {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-md dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Flats</a></li>
-                  <li><a>Plots</a></li>
-                  <li><a>Comercial Property</a></li>
-                  <li><a>Pg-Hostel</a></li>
+        className="menu menu-md dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                  <li className='text-black'><a>Flats</a></li>
+                  <li  className='text-black' ><a>Plots</a></li>
+                  <li  className='text-black'><a>Comercial Property</a></li>
+                  <li  className='text-black'><a>Pg-Hostel</a></li>
                </ul>
     </div>
     <Link to="/" className="btn btn-ghost hidden md:block py-1 text-2xl text-cyan-700 ">NavSankalp</Link>
@@ -55,7 +55,7 @@ function PropertyNavbar() {
 </a>
   </div>
   <div className="navbar-center hidden lg:block bg-gray-50">
-    <ul className="menu menu-horizontal px-6 space-x-4 text-[16px] font-medium">
+    <ul className="menu menu-horizontal px-6 space-x-4 text-[16px] font-medium text-black">
     <li><a className="hover:text-primary transition-all duration-200">Flats</a></li>
     <li><a className="hover:text-primary transition-all duration-200">Plots</a></li>
     <li><a className="hover:text-primary transition-all duration-200">Comercial Property</a></li>

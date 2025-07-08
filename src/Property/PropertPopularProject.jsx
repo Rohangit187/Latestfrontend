@@ -20,7 +20,7 @@ function PropertPopularProject() {
           {categories.map((data) => (
             <div
               key={data.id}
-              className="min-w-[300px] bg-base-100 shadow-xl rounded-lg hover:scale-105 transition-transform cursor-pointer"
+              className="min-w-[300px] bg-base-100 shadow-xl rounded-lg hover:scale-105 transition-transform cursor-pointer bg-white"
             >
               <figure className="w-full h-48 overflow-hidden rounded-t-lg">
                 <img

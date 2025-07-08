@@ -13,8 +13,8 @@ const categories = [
 
 const CategoryShowcasetwo = () => {
   return (
-    <div className="container mx-auto px-4 py-8">      
-      <div className="overflow-x-auto">
+    <div className="container mx-auto px-4 py-md-8">      
+      <div className="overflow-x-auto px-4 px-md-0">
         <div className="grid grid-cols-8 gap-4 min-w-[800px]">
           {categories.map((category) => (
             <div
@@ -28,7 +28,7 @@ const CategoryShowcasetwo = () => {
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <h3 className="text-sm font-semibold mt-2 text-center">{category.name}</h3>
+              <h3 className="text-sm font-semibold mt-2 text-center text-black">{category.name}</h3>
             </div>
           ))}
         </div>

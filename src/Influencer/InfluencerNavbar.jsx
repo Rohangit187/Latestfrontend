@@ -21,7 +21,7 @@ function Navbar() {
     <div className="navbar bg-base-100  bg-gray-100">
   <div className="navbar-start">
     <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-gray-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -37,7 +37,7 @@ function Navbar() {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
         <li><Link to="/Influencer/ForInfluencerpage">ForInfuencer</Link></li>
         <li><Link to="/Influencer/ForBusinessPage">ForBusiness</Link></li>
         <li><Link to="/Influencer/Aboutus">About-Us</Link></li>
@@ -55,7 +55,7 @@ function Navbar() {
     
   </div>
   <div className="navbar-center hidden lg:block">
-    <ul className="menu menu-horizontal px-6 space-x-4 text-[16px] font-medium">
+    <ul className="menu menu-horizontal px-6 space-x-4 text-[16px] font-medium text-black">
     <li><Link to="/Influencer/ForInfluencerpage">ForInfuencer</Link></li>
         <li><Link to="/Influencer/ForBusinessPage">ForBusiness</Link></li>
         <li><Link to="/Influencer/Aboutus">About-Us</Link></li>

@@ -3,7 +3,7 @@ import React from "react";
 const InfluencerUspPoints = () => {
   return (
     <>
-      <div className="px-6 py-8 text-left">
+      <div className="px-5  py-5  text-left">
         <h1 className="text-sm sm:text-sm md:text-sm lg:text-2xl text-cyan-600 font-bold mb-4">
         Your go-to platform to discover local businesses and services across India—perfect 
         for influencers to sign up, showcase their presence, and connect directly with brands looking to collaborate!</h1>
@@ -17,8 +17,8 @@ const InfluencerUspPoints = () => {
         </p>
       </div>
 
-      <div className="px-6 py-8 text-left bg-gray-50 rounded-lg">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cyan-600 font-bold mb-6">
+      <div className="px-5  py-5  text-left bg-gray-50 rounded-lg">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-cyan-600 font-bold mb-md-6">
           How Our Services Are Beneficial for You
         </h2>
 
