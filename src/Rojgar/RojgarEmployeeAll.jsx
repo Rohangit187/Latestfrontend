@@ -53,7 +53,7 @@ function RojgarEmployeeAll() {
       <>
         <RojgarNavbar />
         <RojgarSearchbar />
-        <p style={{ textAlign: 'center' }}>Loading businesses...</p>
+        <p style={{ textAlign: 'center' }}>Loading Employee...</p>
       </>
     );
   }
@@ -63,7 +63,7 @@ function RojgarEmployeeAll() {
       <RojgarNavbar />
       <RojgarSearchbar />
       {data.length === 0 ? (
-        <p style={{ textAlign: 'center' }}>No businesses found for "{employeeCategory}" in "{area}"</p>
+        <p style={{ textAlign: 'center' }}>No Employee found for "{employeeCategory}" in "{area}"</p>
       ) : (
         data.map((item) => (
           <RojgarListingcard key={item._id || item.id} data={item} />

@@ -39,7 +39,7 @@ function ListingPageAllBusiness() {
 
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching business data:', error);
+        console.error('Error fetching Influencer data:', error);
         setLoading(false);
       }
     };
@@ -52,7 +52,7 @@ function ListingPageAllBusiness() {
       <>
         <InfluencerNavbar />
         <InfluencerSearchbar />
-        <p style={{ textAlign: 'center' }}>Loading businesses...</p>
+        <p style={{ textAlign: 'center' }}>Loading Influencer...</p>
       </>
     );
   }
@@ -62,7 +62,7 @@ function ListingPageAllBusiness() {
       <InfluencerNavbar />
       <InfluencerSearchbar />
       {data.length === 0 ? (
-        <p style={{ textAlign: 'center' }}>No businesses found for "{contentCategory}" in "{city}"</p>
+        <p style={{ textAlign: 'center' }}>No Influencer found for "{contentCategory}" in "{city}"</p>
       ) : (
         data.map((item) => (
           <InfluencerListingCard key={item._id || item.id} data={item} />

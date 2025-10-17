@@ -9,7 +9,7 @@ function  PropertyDetailingcard() {
   if (!listingData) {
     return (
       <div className="w-full text-center py-10">
-        <h2 className="text-xl font-bold text-gray-800">Business details not found</h2>
+        <h2 className="text-xl font-bold text-gray-800">Property details not found</h2>
       </div>
     );
   }

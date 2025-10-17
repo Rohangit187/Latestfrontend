@@ -50,7 +50,7 @@ function PropertyAllBusinessListing() {
       <>
         <PropertyNavbar />
         <PropertSearchBar />
-        <p style={{ textAlign: 'center' }}>Loading businesses...</p>
+        <p style={{ textAlign: 'center' }}>Loading Property...</p>
       </>
     );
   }
@@ -59,7 +59,7 @@ function PropertyAllBusinessListing() {
     <>
       <PropertSearchBar />
       {data.length === 0 ? (
-        <p style={{ textAlign: 'center' }}>No businesses found for "{category}" in "{location}"</p>
+        <p style={{ textAlign: 'center' }}>No Property found for "{category}" in "{location}"</p>
       ) : (
         data.map((item) => (
           <PropertyListingCard key={item._id || item.id} data={item} />
